@@ -28,7 +28,7 @@ func main() {
 	})
 
 	// Start the client (credentials come from the Bilibili Open Platform)
-	biligo.Start(code, appId, appSecret, appkeyId, bus)
+	biligo.Start(code, appId, appSecret, appkeyId)
 
 	// Wait for an exit signal, then shut down
 	ch := make(chan os.Signal, 1)

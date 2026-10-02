@@ -28,7 +28,7 @@ func main() {
 	})
 
 	// 启动客户端（参数来自 B 站开放平台）
-	biligo.Start(code, appId, appSecret, appkeyId, bus)
+	biligo.Start(code, appId, appSecret, appkeyId)
 
 	// 等待退出信号后关闭
 	ch := make(chan os.Signal, 1)
