@@ -79,7 +79,7 @@ func TestBilibili(t *testing.T) {
 		biliLog.Printf("推送结束:%s", e.DataPacket.Data.Msg)
 	})
 
-	biligo.Start(code, appIdInt, AppSecret, AppkeyId, eventBus)
+	biligo.Start(code, appIdInt, AppSecret, AppkeyId)
 
 	waitShutdown()
 

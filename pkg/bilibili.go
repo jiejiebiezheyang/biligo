@@ -12,9 +12,9 @@ import (
 var cfg *Config
 
 // 项目启动
-func Start(code string, appId int, appSecret string, appkeyId string, eventBus *Bus) {
-	if eventBus == nil {
-		biliLog.Fatalf("eventBus 未初始化")
+func Start(code string, appId int, appSecret string, appkeyId string) {
+	if biliBus == nil {
+		biliLog.Fatalf("biliBus 未初始化")
 	}
 	if cfg == nil {
 		// 初始化配置
