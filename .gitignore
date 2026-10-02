@@ -1,0 +1,117 @@
+# -------------------- 编译产物 --------------------
+# 二进制可执行文件（通常与项目名或包名相同）
+# 如果项目中有多个 main 包，可考虑用 /bin/ 统一管理
+/myapp
+/myapp.exe
+/dist/
+/bin/
+/build/
+/*.out
+
+# 编译时生成的中间文件
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.test
+
+# Go 特有的编译产物
+# 当使用 go build 生成测试二进制时
+*.test.exe
+
+# -------------------- 依赖管理 --------------------
+# Go Modules (官方推荐)
+/vendor/          # 如果使用 vendor 模式，通常也建议忽略，除非有特殊原因需要提交
+
+# 如果使用 dep
+/Gopkg.lock
+/Gopkg.toml
+
+# 如果使用 glide
+/glide.lock
+
+# -------------------- IDE / 编辑器 --------------------
+# VSCode
+.vscode/
+*.code-workspace
+
+# GoLand / IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim
+*.swp
+*.swo
+*~
+tags
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# -------------------- 系统文件 --------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# Linux
+.directory
+*.pid
+*.lock
+
+# -------------------- 日志 / 临时文件 --------------------
+*.log
+*.tmp
+*.temp
+*.cache
+*.prof
+/coverage.out
+/coverage.html
+*.test.log
+
+# -------------------- 本地环境 / 配置文件 --------------------
+# 环境变量文件（敏感信息）
+.env
+.env.local
+.env.*.local
+*.local
+
+# 配置文件（如果包含敏感信息，建议忽略；否则可以考虑提交示例文件）
+config.toml
+config.yaml
+settings.json
+
+# 调试或性能分析文件
+*.pprof
+cpu.prof
+mem.prof
+
+# -------------------- 其他 --------------------
+# 临时备份文件
+*.bak
+*.orig
+*.rej
+*.patch
+
+# 依赖工具的本地目录
+/.direnv/
+/.asdf/
+
+test.ps1
