@@ -7,6 +7,8 @@
 
 A Bilibili Open Platform Live SDK built on the WebSocket protocol, providing an event bus mechanism to subscribe to various live room events.
 
+> This SDK only wraps the public APIs documented on the official Bilibili Open Platform. Users must apply for their own Open Platform credentials and bear full responsibility for compliance during use. This SDK does not provide credentials, does not proxy requests, and does not collect any data.
+
 ## Quick Start
 
 ```go
